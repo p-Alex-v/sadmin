@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validator</title>
+    <link rel="stylesheet" href="validators.css" />
+    <script defer src="validators.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <ul>
+        <li><img src="/icon48.png" alt="Icon"></li>
+        <li>SADMIN</li>
+      </ul>
+    </header>
+
+    <div class="styledBox commaList">
+      <p>Зазапятить список в столбик или в строку</p>
+      <textarea id="commaList"></textarea>
+      <input class="commaList" id="znatch" value="," type="text">
+      <button id="commaButton">Result:</button>
+      <p class="result" id="commaResult">Результат:</p>
+    </div>
+
+    <div class="styledBox quotesList">
+      <p>Заковычить список</p>
+      <textarea id="quotesList"></textarea>
+      <input class="quotesList" id="quotesZnach" type="text" value="'">
+      <button id="quotesButton">Result:</button>
+      <p class="result" id="quotesResult">Результат:</p>
+    </div>
+
+    <div class="styledBox slist">
+      <p>Преобразовать список из строки в столбик</p>
+      <textarea id="valuelist"></textarea>
+      <button id="stolbButton">Result:</button>
+      <p class="result" id="stolbickResult">Результат:</p>
+    </div>
+
+    <div class="styledBox deleteFromList">
+      <p>Удалить список с разделением (",") из списка с разделением (",")</p>
+      <textarea
+        id="list"
+        type="text"
+        placeholder="Список через запятую, из которого требуется удаление"
+      ></textarea>
+      <textarea
+        id="fromList"
+        type="text"
+        placeholder="Список через запятую, который необходимо удалить"
+      ></textarea>
+      <button id="deleteButton">Result:</button>
+      <p class="result" id="result">Результат:</p>
+    </div>
+  </body>
+</html>
